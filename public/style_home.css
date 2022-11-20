@@ -1,0 +1,77 @@
+
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+  #main_content {
+    height: 100vh;
+  }
+  nav {
+    border-bottom: 3px solid black;
+    background-color: lightgray;
+    opacity: 1;
+    margin: 0%;
+    position: fixed;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .nav_item {
+    margin-left: 1rem;
+    color: wheat;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 2px 1px wheat;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  #main_content {
+    display: grid;
+    grid-column: 4;
+    grid-template-areas: 'left_menu content content content'
+    'footer footer footer footer';
+    margin: 3px;
+  }
+  .content {
+    border: 2px solid black;
+    margin: 2px;
+    grid-area: content;
+    height: auto;
+  }
+  #left_menu {
+    grid-area: left_menu;
+  }
+  #footer {
+    background-color: lightgray;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+    height: 100px;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    margin: 0px;
+  }
+  form{
+    margin: 8px;
+  }
+  .form_child{
+    margin: 9px;
+    padding: 5px;
+  }
+  #submit{
+    border: none;
+  }
+  #radio1{
+    margin-left: 10px;
+  }  
+  #radio2{
+    margin-left: 20px;
+  }

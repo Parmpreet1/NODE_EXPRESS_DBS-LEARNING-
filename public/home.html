@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style_home.css" />
+  </head>
+  <body>
+    <nav>
+      <ul type="none">
+        <li class="nav_item"><a href="/">Home</a></li>
+        <li class="nav_item"><a href="/about">About</a></li>
+        <li class="nav_item"><a href="/contact">contact us</a></li>
+      </ul>
+    </nav>
+    <div style="height: 60px; visibility: none"></div>
+    <div id="main_content">
+      <div id="left_menu" class="content">left_menu</div>
+      <div id="content" class="content">
+        <form action="/get_data" method="get">
+          <div class="form_child">
+            <label for="person_name"> Name: </label>
+            <input type="text" name="person_name" required />
+          </div>
+          <div class="form_child">
+            <label for="age"> Age: </label>
+            <input type="number" name="age" required />
+          </div>
+          <div class="form_child">
+            <label for="gender"> Gender: </label>
+
+            <span id="radio1">
+              Male:
+              <input type="radio" name="gender" required value="male" />
+            </span>
+            <span id="radio2">
+              Female:
+              <input type="radio" name="gender" required value="female" />
+            </span>
+          </div>
+          <div class="form_child">
+            <label for="weight"> weight: </label>
+            <input type="number" name="weight" required />
+          </div>
+          <div class="form_child" id="submit"><input type="submit" /></div>
+        </form>
+        {data_json}
+      </div>
+      <div id="footer" class="content">footer</div>
+    </div>
+  </body>
+</html>
